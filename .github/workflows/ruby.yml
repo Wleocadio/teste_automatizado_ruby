@@ -27,6 +27,11 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Set up Ruby
+
+    - name: Setup chrome driver (for Selenium)
+        uses: nanasess/setup-chromedriver@master
+    
+    
     # To automatically get bug fixes and new Ruby versions for ruby/setup-ruby,
     # change this to (see https://github.com/ruby/setup-ruby#versioning):
     # uses: ruby/setup-ruby@v1
@@ -34,5 +39,7 @@ jobs:
       with:
         ruby-version: ${{ matrix.ruby-version }}
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-    - name: Run tests
-      run: bundle exec rake
+   - name: Bundle install
+        run: |
+          gem install bundler
+          bundle install --jobs 4 --retry 3
