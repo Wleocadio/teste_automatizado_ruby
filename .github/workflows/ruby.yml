@@ -23,4 +23,4 @@ jobs:
         bundler install
 
     - name: bundler exec cucumber
-       run: bundler exec cucumber
+       run: bundler exec cucumber features/specs/menu_esquema_cenario.feture --require features
