@@ -16,5 +16,4 @@ class Menu < SitePrism::Page
         find('h3', text:sessao_name).text
     end
 
-
 end

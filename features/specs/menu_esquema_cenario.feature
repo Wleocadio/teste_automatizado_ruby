@@ -15,4 +15,4 @@ Exemplos: Home Page
 | sobre-nos    | Sobre nós                           |
 | depoimentos  | O Qa.Coders é feito para os alunos  |
 | parceiros    | Parceiros                           |
-| faleConosco | Fale Conosco                        |
+| faleConosco  | Fale Conosco                        |

@@ -9,3 +9,4 @@ end
 Então('sou direcionado para a sessão {string}') do |sessao_name|
     menu.validate_sessao_menu(sessao_name)
 end
+
