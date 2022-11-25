@@ -22,5 +22,5 @@ jobs:
       run: |
         bundler install
 
-    - name: run teste
-       run: cucumber --tags @esquema_cenario
+    - name: bundler exec cucumber
+       run: bundler exec cucumber

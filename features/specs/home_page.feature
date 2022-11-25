@@ -9,7 +9,7 @@ Cenario: Validar o menu da home page
 #Então - Resultado esperado  -  Futuro
 
 Dado que eu esteja na pagina home
-Quando eu clico no botão "Sobre nós"
+Quando eu clico no botão "sobre-nos"
 Então sou direcionado para a sessão "Sobre nós"
 
 
